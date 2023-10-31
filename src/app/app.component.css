@@ -1,0 +1,21 @@
+.header {
+    font-weight: bolder;
+    background-color:#d3d0d0 ;
+    max-width: 100%;
+    /*position: absolute;*/
+}
+
+.img{
+    width:30px;
+    height: 30px;
+    clear:right;
+}
+
+.contribute{
+    float:right;
+    padding:10px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
