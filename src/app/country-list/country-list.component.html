@@ -1,0 +1,47 @@
+<div *ngIf = "countryListReady">
+  <div class="filterSection">
+      <input type="text" class="countrySearch" placeholder="Search" [(ngModel)]="countryName" />
+        <select class="dropDown" name="continentSearch" [(ngModel)]="selectedContinent">
+          <option value="" disabled selected>Filter By Continent</option>
+          <option value="all">all</option>
+          <option *ngFor="let continent of continents | keyvalue" value="{{ continent.key }}">
+          {{ continent.key }}
+          </option>
+        </select>
+  </div>
+  <table class="mainTable">
+      <tr class="tablerow">
+        <th>Symbol</th>
+        <th>Flag</th>
+        <th>Name</th>
+        <th>Continents</th>
+        <th>Population</th>
+        <th>Area</th>
+        <th></th>
+      </tr>
+      <tr (click)="navigateToDetail(index)" class="countryrow" *ngFor="let country of countries_list  | filterByName : countryName | filterByContinent : selectedContinent; let index=index">
+        <td width="10%">
+          <img [src]="country.flags.png" class="symbolImage" />
+        </td>
+        <td width="20%">
+          <img [src]="country.flags.png" class="flagImage" />
+        </td>
+        <td width="10%">
+          {{ country.name.official }}
+        </td>
+        <td width="10%">
+          {{ country.continents }}
+        </td>
+        <td width="10%">
+          {{ country.population }}
+        </td>
+        <td width="10%">
+          {{ country.area }}
+        </td>
+        <td width="10%">
+          <a (click)="navigateToDetail(index)"><img src="../assets/images/Right-arrow.png" class="rightArrow" /></a>
+        </td>
+      </tr>
+    </table>
+</div>
+  

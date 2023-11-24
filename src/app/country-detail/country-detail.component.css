@@ -1,0 +1,31 @@
+.detailColumn{
+    display: inline-block;
+    width:60%;
+    margin-top: 7%;
+    vertical-align: middle;
+}
+.countryFlag{
+    display: inline-block;
+    width:40%;
+    text-align: center;
+    vertical-align: middle;
+}
+table{
+    width: 70%;
+}
+.tableHeading{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+.detailHeader{
+    font-weight: bold;
+}
+.detailValue{
+    padding-top: 1%;
+    padding-bottom:1%;
+}
+.symbolFlag{
+    width:15px;
+    height:15px;
+}

@@ -1,63 +1,10 @@
-<div class="header">
-  <img class="ham-icon" src="../assets/images/hambuger.png">
-  <span> Country Viewer</span>
-  <img>
+<div class="header clearfix">
+  <img class="ham-icon" src="../assets/images/hambuger.png" />
+  <div class="countryViewer">Country Viewer</div>
   <button class="contribute">Contribute</button>
+  <img class="lov-icon" src="../assets/images/heart.png" />
 </div>
-<table class="mainTable">
-  <tr class="tablerow">
-    <th>Symbol</th>
-    <th>Flag</th>
-    <th>Name</th>
-    <th>Continents</th>
-    <th>Population</th>
-    <th>Area</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td width="10%">
-      <img src="../assets/images/India.webp" class="symbolImage">
-    </td>
-    <td width="20%">
-      <img src="../assets/images/India.webp" class="flagImage">
-    </td>
-    <td width="10%">
-      India
-    </td>
-    <td width="10%">
-      Asia
-    </td>
-    <td width="10%">
-      1,20,000
-    </td>
-    <td width="10%">
-      4167
-    </td>
-    <td width="10%">
-      <img src="../assets/images/Right-arrow.png" class="rightArrow">
-    </td>
-  </tr>
-  <!--<tr>
-    <td>
-      <img src="../assets/images/India.webp" class="symbolImage">
-    </td>
-    <td>
-      <img src="../assets/images/India.webp" class="flagImage">
-    </td>
-    <td>
-      India
-    </td>
-    <td>
-      Asia
-    </td>
-    <td>
-      1,20,000
-    </td>
-    <td>
-      4167
-    </td>
-    <td>
-      <img src="../assets/images/Right-arrow.png" class="rightArrow">
-    </td>
-  </tr>-->
-</table>
+<div class="loaderWrapper" *ngIf = "!countriesListReady">
+  <app-spinner class="loaderSpinner"></app-spinner>
+</div>
+<router-outlet></router-outlet>

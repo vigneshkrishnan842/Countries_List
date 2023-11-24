@@ -1,0 +1,54 @@
+<div class="countryFlag">
+    <img [src]="selectedCountryDetail.flags.png">
+</div>
+<div class="detailColumn">
+    <table>
+        <tr> 
+            <td colspan="2" class="tableHeading">Country Details</td> 
+        </tr>
+            <tr>
+                <td class="detailHeader">Country Name:</td>
+                <td class="detailValue">{{selectedCountryDetail.name.official}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Country Area:</td>
+                <td class="detailValue">{{selectedCountryDetail.area}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Country Population:</td>
+                <td class="detailValue">{{selectedCountryDetail.population}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Capital:</td>
+                <td class="detailValue">{{selectedCountryDetail.capital[0]}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Continent</td>
+                <td class="detailValue">{{selectedCountryDetail.continents[0]}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Region:</td>
+                <td class="detailValue">{{selectedCountryDetail.region}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Top-level-domain</td>
+                <td class="detailValue">{{selectedCountryDetail.tld[0]}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Start of Week:</td>
+                <td class="detailValue">{{selectedCountryDetail.startOfWeek}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Sub-region:</td>
+                <td class="detailValue">{{selectedCountryDetail.subregion}}</td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Google Map Location:</td>
+                <td class="detailValue"><a [href]="selectedCountryDetail.maps.googleMaps">Click Here</a></td>
+            </tr>
+            <tr>
+                <td class="detailHeader">Country Symbol:</td>
+                <td class="detailValue"> <img [src]="selectedCountryDetail.flags.png" class="symbolFlag"></td>
+            </tr>
+    </table>
+</div>

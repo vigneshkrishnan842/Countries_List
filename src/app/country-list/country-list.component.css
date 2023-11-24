@@ -1,0 +1,52 @@
+.filterSection{
+    margin-top: 2%;
+}
+.dropDown{
+    float: right;
+    width: 45%;
+    padding: 0.5%;
+    background-color: white;
+    border-radius: 5px;
+}
+.countrySearch{
+    width: 45%;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+::-webkit-input-placeholder,  div input[type="text"]::-moz-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.tablerow{
+    padding: 10px;
+}
+.countryrow:hover{
+    background-color:#ebeef0;
+    cursor: pointer;
+}
+.symbolImage{
+    height: 20%;
+    width: 20%;
+}
+.flagImage{
+    height: 30%;
+    width: 30%;
+}
+.rightArrow{
+    height: 20%;
+    width: 20%;
+    cursor: pointer;
+}
+th,td {
+    text-align: center;
+    padding: 10px;
+}
+table,tr {
+    border: 2px solid #b7bec9;
+    border-collapse: collapse;
+}
+.mainTable{
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px #b7bec9;
+}
