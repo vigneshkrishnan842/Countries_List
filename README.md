@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-**Project Preview:**
+## Project Preview
 
 ![ezgif com-video-to-gif-converter](https://github.com/vigneshkrishnan842/Countries_List/assets/12878201/e6845e1c-4db4-48f0-ba87-c4b9b46732e1)
 
